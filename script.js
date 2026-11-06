@@ -17,7 +17,7 @@
       const progress = maxScroll > 0 ? window.scrollY / maxScroll : 0;
       progressBar.style.transform = `scaleX(${progress})`;
 
-      // A restrained parallax movement keeps the hero photograph atmospheric.
+      // Keeps the hero photograph atmospheric.
       const heroImage = document.querySelector(".hero img");
       if (heroImage && window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
         heroImage.style.transform = `translateY(${window.scrollY * 0.12}px) scale(1.04)`;
